@@ -1,7 +1,7 @@
 const app = require('express')()
 const _ = require('lodash')
 const indexPage = require('./pages/index');
-const PORT = 8080
+const PORT = process.env.PORT || 8080
 
 app.get('/', (req, res) => {
   res.set('Content-Type', 'text/html');
